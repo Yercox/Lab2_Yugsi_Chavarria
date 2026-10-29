@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasatiempos | Sitio web de la pareja</title>
+</head>
+<body>
+
+  <header>
+    <h1>Pasatiempos</h1>
+    <p><a href="index.html">&larr; Volver al inicio</a> | <a href="sobre-nosotros.html">Sobre nosotros</a></p>
+  </header>
+
+  <hr>
+
+  <main>
+    <section>
+      <h2>Lo que nos gusta hacer</h2>
+      <ul>
+        <li>Programar y probar nuevas tecnologías</li>
+        <li>Escuchar música</li>
+        <li>Practicar deportes</li>
+        <li>Jugar videojuegos</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tiempo dedicado a la semana</h2>
+      <table border="1" cellpadding="6" cellspacing="0">
+        <caption>Horas semanales aproximadas por pasatiempo</caption>
+        <thead>
+          <tr>
+            <th scope="col">Pasatiempo</th>
+            <th scope="col">Integrante</th>
+            <th scope="col">Horas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Programar</td><td>Marcos</td><td>10</td></tr>
+          <tr><td>Música</td><td>Compañero/a</td><td>6</td></tr>
+          <tr><td>Deportes</td><td>Marcos</td><td>4</td></tr>
+          <tr><td>Videojuegos</td><td>Compañero/a</td><td>5</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><th colspan="2" scope="row">Total</th><td>25</td></tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>Cuéntanos tu pasatiempo favorito</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </p>
+        <p>
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" placeholder="usuario@correo.com" required>
+        </p>
+        <p>
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" name="edad" min="10" max="99">
+        </p>
+        <p>
+          <label for="pasatiempo">Pasatiempo favorito:</label>
+          <select id="pasatiempo" name="pasatiempo">
+            <option value="programar">Programar</option>
+            <option value="musica">Música</option>
+            <option value="deportes">Deportes</option>
+            <option value="videojuegos">Videojuegos</option>
+          </select>
+        </p>
+        <fieldset>
+          <legend>¿Con qué frecuencia lo practicas?</legend>
+          <label><input type="radio" name="frecuencia" value="diaria" checked> Diaria</label>
+          <label><input type="radio" name="frecuencia" value="semanal"> Semanal</label>
+          <label><input type="radio" name="frecuencia" value="ocasional"> Ocasional</label>
+        </fieldset>
+        <p>
+          <label for="comentario">Comentario:</label><br>
+          <textarea id="comentario" name="comentario" rows="4" cols="40" placeholder="Cuéntanos más..."></textarea>
+        </p>
+        <p>
+          <label><input type="checkbox" name="acepta" required> Acepto compartir esta información</label>
+        </p>
+        <p>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>&copy; 2026 Sitio web de la pareja</p>
+  </footer>
+
+</body>
+</html>
